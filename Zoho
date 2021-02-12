@@ -1,0 +1,19 @@
+def output(string):
+    mid=len(string)//2 + 1
+    string1 = string2 = ""
+    length=len(string)
+    for i in range(mid-1, length):
+        string1 = string1+string[i]
+    for i in range(0,mid-1):
+        string1+=string[i]
+    for i in range(0,length):
+        j = length-1
+        j-=i
+        for k in range(0,j):
+            print(" ")
+        string2+=string1[i]
+        print(string2)
+        print()
+
+string = input()
+output(string)
